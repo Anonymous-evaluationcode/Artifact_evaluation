@@ -20,65 +20,111 @@ This repository contains the artifact for the paper *"Detecting Liquid Food Adul
 ```
 
 
-## 🚀 Quick Start
+# 🚀 Quick Start
 
-# 1. Set up environment
+## 1. Set Up the Environment
 
-# Install Python 3.7.8 (using pyenv recommended)
+### Install Python 3.7.8 (pyenv recommended)
+
+```bash
 pyenv install 3.7.8
-
 pyenv local 3.7.8
+```
 
-# Create and activate virtual environment
+### Create and activate a virtual environment
+
+**Linux / macOS**
+
+```bash
 python -m venv venv
+source venv/bin/activate
+```
 
-source venv/bin/activate  # Linux/macOS
+**Windows**
 
-or
+```powershell
+python -m venv venv
+venv\Scripts\activate
+```
 
-venv\Scripts\activate     # Windows
+### Install dependencies
 
-# Install dependencies
-
+```bash
 pip install -r requirements.txt
+```
 
+---
 
-# 2. Run evaluations
-Option A: One-click run all evaluations (recommended)
+## 2. Run Evaluations
 
-Linux / macOS:
+### Option A: Run All Evaluations (Recommended)
 
+#### Linux / macOS
+
+```bash
 chmod +x run_all.sh
-
 ./run_all.sh
+```
 
-Windows:
+#### Windows
 
-
+```bat
 run_all.bat
+```
 
-This will automatically run all three evaluations in sequence:
+This script sequentially performs the following evaluations:
 
-a. Spectral reconstruction test
+1. Spectral reconstruction
+2. Adulteration detection
+3. Transfer learning on orange juice
 
-b. Adulteration detection
+---
 
-c. Transfer learning on orange juice
+### Retrain the VIS–NIR Spectral Recovery Models
 
+If you would like to retrain the VIS–NIR spectral recovery models instead of using the provided pre-trained weights:
 
-Option B: Run each script individually
+#### Linux / macOS
 
-a. Run spectral recovery evaluation
+```bash
+chmod +x run_train_and_test.sh
+./run_train_and_test.sh
+```
 
+#### Windows
+
+```bat
+run_train_and_test.bat
+```
+
+---
+
+### Option B: Run Each Script Individually
+
+#### 1. Spectral Reconstruction Evaluation
+
+```bash
 python LiquidLens_VIS-NIR_reconstruction_test.py
+```
 
+#### 2. Adulteration Detection
 
-b. Run adulteration detection
-
+```bash
 python LiquidLens_adulteration_detection.py
+```
 
+#### 3. Transfer Learning on Orange Juice
 
-c. Run transfer learning (orange juice)
-
+```bash
 python LiquidLens_transferlearning.py
+```
+
+#### 4. Retrain the VIS–NIR Spectral Recovery Models
+
+```bash
+python LiquidLens_VIS-NIR_reconstruction_train_test.py
+```
+
+
+
 
