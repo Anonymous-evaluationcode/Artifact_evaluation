@@ -3,29 +3,21 @@
 This repository contains the artifact for the paper *"Detecting Liquid Food Adulteration with Mobile Hyperspectral Analysis based on RGB Camera"*.
 
 ## 📁 Repository Structure
-├── dataset/ # Pre-split spectral datasets (honey+wine, orange juice)
-
-├── model/ # Pre-trained model weights (.pth files)
-
-│ ├── best_student_model.pth
-
-│ ├── best_teacher_model.pth
-
-│ └── best_nir_model.pth
-
-├── output/ # Output directory for results
-
-├── LiquidLens_VIS-NIR_reconstruction_test.py
-
-├── LiquidLens_VIS-NIR_reconstruction_train_test.py
-
-├── LiquidLens_adulteration_detection.py
-
-├── LiquidLens_transferlearning.py
-
-├── requirements.txt
-
-└── README.md
+```bash
+.
+├── dataset/                                    # Pre-split spectral datasets (honey+wine, orange juice) and RGB images datasets
+├── model/                                      # Pre-trained model weights (.pth files)
+│   ├── best_student_model.pth                  # Flash-adapted VIS reconstructor (RGB → 400-750nm)
+│   ├── best_teacher_model.pth                  # Halogen-trained VIS reconstructor (for ECDA distillation)
+│   └── best_nir_model.pth                      # NIR predictor (750-1000nm)
+├── output/                                     # Output directory
+├── LiquidLens_VIS-NIR_reconstruction_test.py   # Evaluation only (uses pre-trained models)
+├── LiquidLens_VIS-NIR_reconstruction_train_test.py  # Train + evaluation (optional)
+├── LiquidLens_adulteration_detection.py        # Adulteration classification
+├── LiquidLens_transferlearning.py              # Transfer learning on orange juice (unknown liquid)
+├── requirements.txt                            # Python package dependencies
+└── README.md                                   # This file
+```
 
 
 ## 🚀 Quick Start
