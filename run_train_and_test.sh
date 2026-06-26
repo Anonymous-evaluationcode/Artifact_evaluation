@@ -22,8 +22,7 @@ echo ""
 echo "=========================================="
 echo "Starting Training + Testing..."
 echo "=========================================="
-echo "⏱️  Estimated time: ~65 minutes on GPU"
-echo "   (CPU training will take significantly longer)"
+echo "⏱️  Estimated time: ~65 minutes"
 echo ""
 
 # Run the training + test script

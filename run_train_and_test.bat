@@ -7,8 +7,7 @@ echo.
 echo ==========================================
 echo Starting Training + Testing...
 echo ==========================================
-echo Estimated time: ~65 minutes on GPU
-echo (CPU training will take significantly longer)
+echo Estimated time: ~65 minutes
 echo.
 
 python LiquidLens_VIS-NIR_reconstruction_train_test.py
