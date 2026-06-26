@@ -42,22 +42,47 @@ venv\Scripts\activate     # Windows
 
 pip install -r requirements.txt
 
-# 2. Run spectral recovery evaluation
-bash
+
+# 2. Run evaluations
+Option A: One-click run all evaluations (recommended)
+
+Linux / macOS:
+
+chmod +x run_all.sh
+
+./run_all.sh
+
+Windows:
+
+
+run_all.bat
+
+This will automatically run all three evaluations in sequence:
+
+a. Spectral reconstruction test
+
+b. Adulteration detection
+
+c. Transfer learning on orange juice
+
+
+Option B: Run each script individually
+
+
+
+a. Run spectral recovery evaluation
 
 python LiquidLens_VIS-NIR_reconstruction_test.py
 
 Expected output: MRAE ≈ 0.075, RMSE ≈ 0.042 (Table 3)
 
-# 3. Run adulteration detection
-bash
+b. Run adulteration detection
 
 python LiquidLens_adulteration_detection.py
 
 Expected output: Honey 96.2%, Wine 94.0% (Figures 15-16)
 
-# 4. Run transfer learning (orange juice)
-bash
+c. Run transfer learning (orange juice)
 
 python LiquidLens_transferlearning.py
 
