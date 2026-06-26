@@ -19,7 +19,7 @@ This repository contains the artifact for the paper *"Detecting Liquid Food Adul
 
 ## 🚀 Quick Start
 
-### 1. Set up environment
+# 1. Set up environment
 
 # Install Python 3.7.8 (using pyenv recommended)
 pyenv install 3.7.8
@@ -34,17 +34,17 @@ venv\Scripts\activate     # Windows
 # Install dependencies
 pip install -r requirements.txt
 
-#Step 2: Run spectral recovery evaluation
+# 2: Run spectral recovery evaluation
 bash
 python LiquidLens_VIS-NIR_reconstruction_test.py
 Expected output: MRAE ≈ 0.075, RMSE ≈ 0.042 (Table 3)
 
-#Step 3: Run adulteration detection
+# 3: Run adulteration detection
 bash
 python LiquidLens_adulteration_detection.py
 Expected output: Honey 96.2%, Wine 94.0% (Figures 15-16)
 
-#Step 4: Run transfer learning (orange juice)
+# 4: Run transfer learning (orange juice)
 bash
 python LiquidLens_transferlearning.py
 
