@@ -31,7 +31,7 @@ This repository contains the artifact for the paper *"Detecting Liquid Food Adul
 
 ### Create and activate a virtual environment
 
-Create a virtual environment using **Python 3.7.8**.
+Create a virtual environment using **Python 3.7**.
 
 **Linux / macOS**
 
