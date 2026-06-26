@@ -4,16 +4,27 @@ This repository contains the artifact for the paper *"Detecting Liquid Food Adul
 
 ## 📁 Repository Structure
 ├── dataset/ # Pre-split spectral datasets (honey+wine, orange juice)
+
 ├── model/ # Pre-trained model weights (.pth files)
+
 │ ├── best_student_model.pth
+
 │ ├── best_teacher_model.pth
+
 │ └── best_nir_model.pth
+
 ├── output/ # Output directory for results
+
 ├── LiquidLens_VIS-NIR_reconstruction_test.py
+
 ├── LiquidLens_VIS-NIR_reconstruction_train_test.py
+
 ├── LiquidLens_adulteration_detection.py
+
 ├── LiquidLens_transferlearning.py
+
 ├── requirements.txt
+
 └── README.md
 
 
