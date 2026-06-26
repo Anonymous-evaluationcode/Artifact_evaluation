@@ -68,19 +68,15 @@ c. Transfer learning on orange juice
 
 Option B: Run each script individually
 
-
-
 a. Run spectral recovery evaluation
 
 python LiquidLens_VIS-NIR_reconstruction_test.py
 
-Expected output: MRAE ≈ 0.075, RMSE ≈ 0.042 (Table 3)
 
 b. Run adulteration detection
 
 python LiquidLens_adulteration_detection.py
 
-Expected output: Honey 96.2%, Wine 94.0% (Figures 15-16)
 
 c. Run transfer learning (orange juice)
 
