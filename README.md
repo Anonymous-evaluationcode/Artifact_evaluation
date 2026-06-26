@@ -24,7 +24,7 @@ This repository contains the artifact for the paper *"Detecting Liquid Food Adul
 
 ## 1. Set Up the Environment
 
-# Requirements
+### Requirements
 
 - Python 3.7.8
 - pip
