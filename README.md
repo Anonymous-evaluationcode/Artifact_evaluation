@@ -73,7 +73,7 @@ chmod +x run_all.sh
 #### Windows
 
 ```bat
-run_all.bat
+./run_all.bat
 ```
 
 This script sequentially performs the following evaluations:
@@ -98,7 +98,7 @@ chmod +x run_train_and_test.sh
 #### Windows
 
 ```bat
-run_train_and_test.bat
+./run_train_and_test.bat
 ```
 
 ---
