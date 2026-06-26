@@ -26,7 +26,7 @@ This repository contains the artifact for the paper *"Detecting Liquid Food Adul
 
 ### Requirements
 
-- Python 3.7.8
+- Python 3.7
 - pip
 
 ### Create and activate a virtual environment
