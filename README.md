@@ -24,14 +24,14 @@ This repository contains the artifact for the paper *"Detecting Liquid Food Adul
 
 ## 1. Set Up the Environment
 
-### Install Python 3.7.8 (pyenv recommended)
+# Requirements
 
-```bash
-pyenv install 3.7.8
-pyenv local 3.7.8
-```
+- Python 3.7.8
+- pip
 
 ### Create and activate a virtual environment
+
+Create a virtual environment using **Python 3.7.8**.
 
 **Linux / macOS**
 
@@ -56,6 +56,10 @@ pip install -r requirements.txt
 ---
 
 ## 2. Run Evaluations
+
+The repository includes pre-trained model weights.
+
+You can directly reproduce the reported results without retraining.
 
 ### Option A: Run All Evaluations (Recommended)
 
